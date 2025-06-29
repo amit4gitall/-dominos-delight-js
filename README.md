@@ -36,10 +36,10 @@ Welcome to **Dominos Delight JS**, a fully-functional, real-world Domino’s Piz
 ## 🖥️ Screenshots
 
 <p align="center">
-  <img src="screenshots/home.png" alt="Home Screen" width="700"/>
+  <img src="one.webp" alt="Home Screen" width="700"/>
 </p>
 <p align="center">
-  <img src="screenshots/cart.png" alt="Cart" width="700"/>
+  <img src="two.webp" alt="Cart" width="700"/>
 </p>
 <p align="center">
   <img src="screenshots/payment.png" alt="Payment" width="700"/>
