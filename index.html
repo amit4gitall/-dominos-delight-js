@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domino's Pizza - Online Order</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">Domino's Pizza</div>
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="Search for pizzas, sides, desserts...">
+                <button class="search-btn">🔍</button>
+            </div>
+            <div class="cart-info">
+                <div class="cart" onclick="toggleCart()">
+                    <span>🛒</span>
+                    <span>Cart</span>
+                    <span class="cart-count" id="cartCount">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Categories and Sort -->
+        <section class="categories">
+            <h2>Categories</h2>
+            <div class="category-list">
+                <button class="category-btn active" data-category="all">All Items</button>
+                <button class="category-btn" data-category="pizza">Pizza</button>
+                <button class="category-btn" data-category="sides">Sides</button>
+                <button class="category-btn" data-category="desserts">Desserts</button>
+                <button class="category-btn" data-category="drinks">Drinks</button>
+            </div>
+            <div class="sort-section">
+                <label for="sortSelect">Sort by:</label>
+                <select id="sortSelect" class="sort-select">
+                    <option value="name">Name (A-Z)</option>
+                    <option value="name-desc">Name (Z-A)</option>
+                    <option value="price-low">Price (Low to High)</option>
+                    <option value="price-high">Price (High to Low)</option>
+                    <option value="discount">Best Discount</option>
+                    <option value="popular">Most Popular</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- Products -->
+        <section class="products-section">
+            <h2>Our Menu</h2>
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be populated by JavaScript -->
+            </div>
+        </section>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart" onclick="toggleCart()">×</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <div class="empty-cart">
+                <div class="empty-cart-icon">🛒</div>
+                <p>Your cart is empty</p>
+                <p>Add some delicious items!</p>
+            </div>
+        </div>
+        <div class="cart-total" id="cartTotal" style="display: none;">
+            <div class="total-row">
+                <span>Subtotal:</span>
+                <span id="subtotal">₹0</span>
+            </div>
+            <div class="total-row">
+                <span>Delivery:</span>
+                <span>₹40</span>
+            </div>
+            <div class="total-row">
+                <span>Tax:</span>
+                <span id="tax">₹0</span>
+            </div>
+            <div class="total-row final">
+                <span>Total:</span>
+                <span id="totalAmount">₹0</span>
+            </div>
+            <button class="checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay" onclick="toggleCart()"></div>
+
+    <script src="logic.js"></script>
+</body>
+</html>
