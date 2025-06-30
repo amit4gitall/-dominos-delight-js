@@ -1,0 +1,127 @@
+var a;
+undefined
+typeof a;
+'undefined'
+a=10;
+10
+typeof a;
+'number'
+a='Amit';
+'Amit'
+typeof a;
+'string'
+a=true;
+true
+typeof a;
+'boolean'
+a = undefined;
+undefined
+typeof a;
+'undefined'
+a=1000;
+1000
+typeof a;
+'number'
+a=90.20;
+90.2
+typeof a;
+'number'
+a=10/0;
+Infinity
+a;
+Infinity
+typeof a;
+'number'
+a=10 - "Amit";
+NaN
+a;
+NaN
+typeof a;
+'number'
+a=1000;
+1000
+typeof a;
+'number'
+a= 10 * "ten";
+NaN
+a=756439865798456798547689547986754896759847689547967548967549869;
+7.564398657984568e+62
+a= Number.MAX_SAFE_INTEGER;
+9007199254740991
+++a;
+9007199254740992
+++a;
+9007199254740992
+++a;
+9007199254740992
+++a;
+9007199254740992
+a= 9007199254740992n;
+
+9007199254740992n
+typeof a;
+'bigint'
+var b = 7687568487568584736587436578436;
+undefined
+var b = 7687568487568584736587436578436n;
+undefined
+b;
+7687568487568584736587436578436n
+var c = a + b;
+undefined
+c;
+7687568487568593743786691319428n
+var c = BigInt("65873465874368753647856378465873645846738376");
+undefined
+c;
+65873465874368753647856378465873645846738376n
+var e = Symbol();
+undefined
+e;
+Symbol()
+var f = Symbol();
+undefined
+e == f;
+false
+typeof f;
+'symbol'
+var w = [true, false, true, true];
+undefined
+typeof w;
+'object'
+w = null;
+null
+null == undefined;
+true
+null === undefined;
+false
+10 == "10"
+true
+10 === "10"
+false
+10 + null
+10
+10 + "Amit"
+'10Amit'
+10 + true;
+11
+a = 'amit';
+'amit'
+a = "AMit";
+'AMit'
+a = "Let's do it ";
+"Let's do it "
+a = `jdklghjfdjhlfdlkhjfgklhjgflk
+ghdfkjhfkjhfdjkhg
+ghdjkfghdfhkjg`;
+'jdklghjfdjhlfdlkhjfgklhjgflk\nghdfkjhfkjhfdjkhg\nghdjkfghdfhkjg'
+name = 'Amit';
+'Amit'
+var letter = `Dear ${name}, How are You`;
+undefined
+letter;
+'Dear Amit, How are You'
+typeof letter;
+'string'
+typeof (letter);
+'string'
